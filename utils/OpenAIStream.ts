@@ -21,7 +21,7 @@ export async function OpenAIStream(payload: OpenAIStreamPayload) {
 
   const requestHeaders: Record<string, string> = {
     "Content-Type": "application/json",
-    Authorization: `Bearer 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`,
+    Authorization: `Bearer ${process.env.OPENAI_API_KEY ?? ""}`,
   };
 
   if (process.env.OPENAI_API_ORG) {
