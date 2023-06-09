@@ -67,7 +67,7 @@ const ChatPage = () => {
     // add new message
     setNewMessage(newAiMessage);
 
-    const response = await fetch("/api/test", {
+    const response = await fetch("/api/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
