@@ -71,6 +71,8 @@ const ChatPage = () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Origin": "*",
       },
       body: JSON.stringify({
         messages: messages,
